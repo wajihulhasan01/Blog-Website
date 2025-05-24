@@ -1,0 +1,64 @@
+.navT {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .navT .icon {
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    transition: all 0.25s ease;
+  }
+  
+  .navT .icon::before,
+  .navT .icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: 0px;
+    background-color: white;
+    transition: all 0.25s ease;
+  }
+  
+  .navT .icon::before {
+    top: -10px;
+  }
+  
+  .navT .icon::after {
+    top: 10px;
+  }
+  
+  .navT:hover .icon::before {
+    top: -12px;
+  }
+  
+  .navT:hover .icon::after {
+    top: 12px;
+  }
+  
+  .navT.active .icon {
+    background-color: transparent;
+    transform: rotate(180deg);
+    left: 10px;
+  }
+  
+  .navT.active .icon::before,
+  .navT.active .icon::after {
+    top: 0;
+  }
+  
+  .navT.active .icon::before {
+    transform: rotate(45deg);
+  }
+  
+  .navT.active .icon::after {
+    transform: rotate(-45deg);
+  }
+  
