@@ -5,7 +5,7 @@ import Footer from "./MyComponents/footer";
 import LandingPage from "./MyComponents/landingPage";
 import About from './MyComponents/about';
 import Contact from './MyComponents/contact';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Dashboard from './MyComponents/dashboard';
 
 function App() {

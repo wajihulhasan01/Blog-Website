@@ -5,39 +5,39 @@ import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-  { src: "/main.png", duration: 3000 },
-  { src: "/project.png", duration: 3000 },
-  { src: "/community.png", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/main.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/project.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/community.png", duration: 6000 },
 ];
 const images1 = [
-  { src: "cli.png", duration: 3000 },
-  { src: "idea.png", duration: 3000 },
-  { src: "trust.webp", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/cli.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/idea.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/trust.webp", duration: 6000 },
 ];
 const images2 = [
-  { src: "github.png", duration: 3000 },
-  { src: "plan.webp", duration: 3000 },
-  { src: "tool.png", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/github.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/plan.webp", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/tool.png", duration: 6000 },
 ];
 const images3 = [
-  { src: "/laptop.png", duration: 3000 },
-  { src: "/image1.jpg", duration: 3000 },
-  { src: "/sharedgoal.png", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/laptop.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/image1.jpg", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/sharedgoal.png", duration: 6000 },
 ];
 const images4 = [
-  { src: "/brain.webp", duration: 3000 },
-  { src: "/R (1).png", duration: 3000 },
-  { src: "/com.png", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/brain.webp", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/R (1).png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/com.png", duration: 6000 },
 ];
 const images5 = [
-  { src: "/ide.webp", duration: 3000 },
-  { src: "/development.webp", duration: 3000 },
-  { src: "/flexibility.png", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/ide.webp", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/development.webp", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/flexibility.png", duration: 6000 },
 ];
 const images6 = [
-  { src: "/image3.jpg", duration: 3000 },
-  { src: "/deployment.png", duration: 3000 },
-  { src: "/accountability.webp", duration: 6000 },
+  { src: "${process.env.PUBLIC_URL}/image3.jpg", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/deployment.png", duration: 3000 },
+  { src: "${process.env.PUBLIC_URL}/accountability.webp", duration: 6000 },
 ];
 
 function useImageSlider(imagesArray) {
