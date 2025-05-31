@@ -4,7 +4,7 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAyOI6UOObWMUtxBVQT8d7K5-NIJEG2IYM",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "code-canvas-blog-websi.firebaseapp.com",
   projectId: "code-canvas-blog-websi",
   appId: "1:239948733961:web:469157a04173426f0f62d8",

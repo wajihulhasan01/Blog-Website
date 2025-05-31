@@ -216,7 +216,7 @@ export default function Dashboard() {
       </nav>
 
       <div className="min-h-screen flex bg-blue-600">
-        <div className="flex-1 p-6 flex flex-col gap-6">
+        <div className="flex-1 py-6 mx-2 flex flex-col gap-6">
           <div className="flex justify-between items-center">
             {activeTab === "dashboard" && <h1 className="text-white font-semibold text-3xl">Dashboard</h1>}
             {activeTab === "posts" && (
